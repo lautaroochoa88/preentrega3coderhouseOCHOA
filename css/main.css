@@ -1,0 +1,119 @@
+/* ===== RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ===== BODY ===== */
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  
+  /* ===== HEADER ===== */
+
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #ffdd57;
+  }
+  
+  /* ===== MAIN ===== */
+
+  main {
+    padding: 20px;
+  }
+  
+  /* BOX MODEL: Se aplica a los artículos */
+
+  article {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ===== FOOTER ===== */
+
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* ===== FLEXBOX: Se aplica al diseño de Servicios ===== */
+
+  .flex-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .flex-container div {
+    flex: 1;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* ===== GRID: Se aplica al diseño de Nosotros ===== */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-container div {
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* ===== MEDIA QUERIES ===== */
+  
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
